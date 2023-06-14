@@ -100,9 +100,9 @@ body{
 
 .centered-element {
   position: fixed;
-  top: 8%;
+  top: 0%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
 }
 
 
@@ -216,59 +216,66 @@ ul li {
   width: 100%;
   height: 100vh;}
 
- 
+
   .container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.text-overlay {
-  word-spacing: 15px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-color: dark;
-}
+  .text-overlay {
+    word-spacing: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: dark;
+  }
 
-.text-overlay h1 {
-  color: dark;
-  font-size: 32px;
-}
-
-
-.tam {
-  position: absolute;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-color: dark;
-}
+  .text-overlay h1 {
+    color: dark;
+    font-size: 32px;
+  }
 
 
-.menu {
-  position: relative;
-  display: inline-block;
-height: 100vh;
+  .tam {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: dark;
+  }
 
-}
 
-.submenu {
+  .menu {
+    position: relative;
+    display: inline-block;
+    height: 100vh;
+
+  }
+
+  .submenu {
 /*  display: none;*/
 opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  background-color: #f1f1f1;
-  height: 100vh;
+position: absolute;
+top: 0;
+left: 0;
+padding: 10px;
+background-color: #f1f1f1;
+height: 100vh;
 transition: opacity 0.3s ease-out;
+box-shadow: 0 0 30px gray;
 
 }
+
+.submenu *{
+  font-family: 'Arial Black', Gadget, sans-serif;
+  color: black;
+}
+
 
 .has-submenu:hover > .submenu,
 .submenu .has-submenu:hover > .submenu-3 {
@@ -278,12 +285,11 @@ transition: opacity 0.3s ease-out;
 
 .menu-text {
   cursor: pointer;
-
 }
 
 .menu:hover .submenu {
 /*  display: block;*/
-opacity: 80%;
+opacity: 85%;
 transition: opacity 0.3s ease-out;
 }
 
@@ -293,11 +299,11 @@ body::-webkit-scrollbar {
 
 .box {
 /*  width: 200px;*/
-  height: 500px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  position: relative;
-  overflow: hidden;
+max-height: 500px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+position: relative;
+overflow: hidden;
 }
 
 .box::before {
@@ -312,8 +318,64 @@ body::-webkit-scrollbar {
 }
 
 .kontsh{
-    font-family:algerian;
-    font-family:bold;
-    font-size:25px;
+  font-family:algerian;
+  font-family:bold;
+  font-size:25px;
 }
 
+.wew{
+  background-image: url(o6.jpg);
+  min-height: 100vh;
+  padding-bottom: 5rem;
+
+}
+
+.wew>div{
+  padding-top: 14rem;
+  margin:0 auto;
+}
+
+.ttr{
+  color: black;
+}
+
+.eew a{
+  color: black !important;
+}
+
+.vid{
+  width: 100%;
+/*  height: 25vw;
+overflow-y: hidden;*/
+}
+
+footer a{
+  color: black;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.crop {
+  background-image: url(kk1.jpg);
+  background-size: cover;
+  background-position: 0 21%;
+width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.crop img {
+width: 100%;
+object-fit: fill;
+    height: 300px;
+    margin: -75px 0 0 0px;
+}
+
+footer li{
+  
+}
+
+.kod span{
+font-family:'Arial Black', Gadget, sans-serif;
+}
